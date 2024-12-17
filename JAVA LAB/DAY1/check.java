@@ -67,20 +67,20 @@ public class check{
     public static void main(String args[]) {
         Define obj = new Define();
         System.out.println("Enter the Number to check for: ");
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
-        System.out.println("1.Perfect Square Number\n2.Even or Odd\n3.Prime Number\n4.Armstrong or not\n5.Palindrome or not");
-        System.out.println("Enter your choice: ");
+        try (Scanner scan = new Scanner(System.in)) {
+            int num = scan.nextInt();
+            System.out.println("1.Perfect Square Number\n2.Even or Odd\n3.Prime Number\n4.Armstrong or not\n5.Palindrome or not");
+            System.out.println("Enter your choice: ");
 
-        int c = scan.nextInt();
-        switch (c) {
-            case 1 -> obj.CheckPerfect(num);
-            case 2 -> obj.CheckEvenorOdd(num);
-            case 3 -> obj.CheckPrime(num);
-            case 4 -> obj.CheckArmstrong(num);
-            case 5 -> obj.CheckPalindrome(num);
-            default -> System.out.println("Invalid choice");
+            int c = scan.nextInt();
+            switch (c) {
+                case 1 -> obj.CheckPerfect(num);
+                case 2 -> obj.CheckEvenorOdd(num);
+                case 3 -> obj.CheckPrime(num);
+                case 4 -> obj.CheckArmstrong(num);
+                case 5 -> obj.CheckPalindrome(num);
+                default -> System.out.println("Invalid choice");
+            }
         }
-        scan.close();
     }
 }
