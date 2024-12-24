@@ -1,13 +1,7 @@
 /*
- * Find sum of each diagonal (left &amp; right) elements separately of a user
+  Find sum of each diagonal (left &amp; right) elements separately of a user
 entered 3 X 3 matrix in Java.
 
-Input: Enter 3X3 matrix
-e.g. 6 7 3
-8 9 2
-1 2 9
-Output: Left=24
-Right=13
  */
 
 import java.util.Scanner;
